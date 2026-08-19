@@ -6,7 +6,7 @@
 
 **3) RAM-порог через cgroups** — построение кривой деградации build time при искусственном лимите памяти для вывода формулы необходимого запаса RAM.
 
-**4) ef_search / recall при фильтрации** — разбор проблемы падения recall до 0.012 при фильтре 99%. Тестирование `ef_search` и нового механизма `iterative_scan` (pgvector 0.8.0+).
+**4) ef_search / recall при фильтрации** — разбор проблемы падения recall до 0.012 при фильтре 99%. Тестирование ef_search и механизма iterative_scan (pgvector 0.8.0+).
 
 <hr style="border: none; height: 3px; background-color: #1e88e5; margin: 25px 0;" />
 
@@ -18,7 +18,7 @@
 - **Кэш-иерархия:** L1d 128 KiB, L1i 128 KiB, L2 1 MiB, **L3 8 MiB** (общий)
 - **RAM:** 32 ГБ DDR4 (фактически доступно 30 GiB)
 - **ОС:** Ubuntu 26.04 LTS, ядро 7.0.0-29-generic
-- **Postgres:** 18.4 (Ubuntu 18.4-0ubuntu0.26.04.1)
+- **Postgres:** 18.4 (Ubuntu 18.4-0)
 
 ## <span style="color: #1565c0;">Краткие выводы</span>
 
